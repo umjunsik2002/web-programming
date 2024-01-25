@@ -58,18 +58,18 @@ Install the following packages to run the program successfully:
 
 Build and bundle your Phaser files with Webpack by executing the following command:
 
-    ```
-    npx webpack
-    ```
+```
+npx webpack
+```
 
 Subsequently, initiate the server using:
 
-    ```
-    npm start
-    ```
+```
+npm start
+```
 
 While the server is active, access the client in your browser by navigating to:
 
-    ```
-    http://localhost:3000
-    ```
+```
+http://localhost:3000
+```
