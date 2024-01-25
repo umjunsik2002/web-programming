@@ -6,9 +6,9 @@ Ensure you have the Node.js installed on your machine, preferably the LTS versio
 
 In the project directory, enter the following code to initialize the Node.js:
 
-    ```
-    npm init
-    ```
+```
+npm init
+```
 
 ## Packages
 
