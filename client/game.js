@@ -2,7 +2,7 @@ const Phaser = require('phaser');
 const io = require('socket.io-client');
 
 // Create a socket instance
-const socket = io('http://localhost:3000');
+const socket = io();
 
 class Title extends Phaser.Scene {
     constructor() {
@@ -31,7 +31,6 @@ class Title extends Phaser.Scene {
     }
 }
 
-// Phaser game configuration
 const config = {
     type: Phaser.WEBGL,
     scale: {
@@ -44,5 +43,4 @@ const config = {
     scene: [Title]
 };
 
-// Create a new Phaser game instance
 const game = new Phaser.Game(config);
