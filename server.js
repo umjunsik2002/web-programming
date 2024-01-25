@@ -30,4 +30,4 @@ server.listen(PORT, () => {
 
 setInterval(() => {
     io.emit('updateConnectedUsers', connectedUsers);
-}, 5000); // 5000 milliseconds (5 seconds)
+}, 5000);
