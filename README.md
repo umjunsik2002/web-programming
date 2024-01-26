@@ -4,7 +4,9 @@ Ensure you have the Node.js installed on your machine, preferably the LTS versio
 
 - [Node.js](https://nodejs.org/)
 
-In the project directory, enter the following code to initialize the Node.js:
+In the project directory, enter the following code to initialize the Node.js to create the file ```package.json```:
+
+**Do not have to initialize if downloading or forking from this repository**
 
 ```
 npm init
@@ -68,8 +70,4 @@ Subsequently, initiate the server using:
 npm start
 ```
 
-While the server is active, access the client in your browser by navigating to:
-
-```
-http://localhost:3000
-```
+While the server is active, access the client in your browser by navigating to: ```http://localhost:3000```
