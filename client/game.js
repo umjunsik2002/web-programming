@@ -2,7 +2,7 @@ const Phaser = require('phaser');
 const io = require('socket.io-client');
 
 // Create a socket instance
-const socket = io();
+const socket = io({ reconnection: true });
 
 class Loading extends Phaser.Scene {
     constructor() {
@@ -58,7 +58,7 @@ class Disconnected extends Phaser.Scene {
 
         const checkConnection = () => {
             if (socket.connected) {
-                console.log('Connected to server');
+                console.log('Reconnected to server');
                 clearInterval(connectionInterval);
                 this.scene.start('Title');
             }
@@ -102,6 +102,7 @@ class Title extends Phaser.Scene {
 
         socket.on('disconnect', () => {
             console.log('Disconnected from server');
+            socket.off('disconnect');
             socket.off('updateConnectedUsers', this.updateConnectedUsersListener);
             this.scene.start('Disconnected');
         });
